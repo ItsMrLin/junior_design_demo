@@ -64,11 +64,11 @@
     <script src="js/jd.js" type="text/javascript"></script>  
     <script type="text/javascript">
         function validate(){
-            if ($("#inputEmail").val() == "zlin48@gatech.edu") {
-                window.location.href = "interviewer.html";
+            if ($("#inputEmail").val().indexOf("zlin48") > -1){
+                window.location.replace("interviewer.html");
             } else {
-                if ($("#inputEmail").val() == "faye413@gatech.edu") {
-                    window.location.href = "interviewee.html";
+                if ($("#inputEmail").val().indexOf("faye413") > -1) {
+                    window.location.replace("interviewee.html");
                 } else {
                     $(".login-error-info").css("display", "inherit");
                 }

@@ -76,20 +76,20 @@
 
         $(document).ready(function() {
 
-            $(".nav-container").load("nav.php", {"name": "Jerry"});
+            $(".nav-container").load("nav.php", {"name": "Faye"});
             if (!queryString.page) {
-                $(".content-area").load("feed.php", {"name": "Jerry"});
+                $(".content-area").load("feed.php", {"name": "Faye"});
             }
             if (queryString.page.toLowerCase() == "profile") {
-                $(".content-area").load("profile.php", {"name": "Jerry"});
+                $(".content-area").load("profile.php", {"name": "Faye"});
             } else {
                 if (queryString.page.toLowerCase() == "schedule") {
-                    $(".content-area").load("schedule.php", {"name": "Jerry"});
+                    $(".content-area").load("schedule.php", {"name": "Faye"});
                 } else {
                     if (queryString.page.toLowerCase() == "contact") {
-                        $(".content-area").load("contact.php", {"name": "Jerry"});
+                        $(".content-area").load("contact.php", {"name": "Faye"});
                     } else {
-                        $(".content-area").load("feed.php", {"name": "Jerry"});
+                        $(".content-area").load("feed.php", {"name": "Faye"});
                     }
                 }
             }

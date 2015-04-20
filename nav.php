@@ -8,15 +8,13 @@
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="">Hi, <?php echo $_POST['name'];?></a>
                 </li>
-                <li><a href="">Feed</a>
+                <li><a href="?page=feed">Feed</a>
                 </li>
-                <li><a href="">Profile</a>
+                <li><a href="?page=profile">Profile</a>
                 </li>
-                <li><a href="">Schedule</a>
+                <li><a href="?page=schedule">Schedule</a>
                 </li>
-                <li><a href="">Payment</a>
-                </li>
-                <li><a href="">Contact Us</a>
+                <li><a href="?page=contact">Contact Us</a>
                 </li>
             </ul>
         </div>

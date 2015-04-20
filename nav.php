@@ -12,8 +12,13 @@
                 </li>
                 <li><a href="?page=profile">Profile</a>
                 </li>
-                <li><a href="?page=schedule">Schedule</a>
-                </li>
+                <?php 
+                    if ($_POST['name'] == "Jerry") {
+                        echo '<li><a href="?page=schedule">Schedule</a></li>';
+                    } else {
+                        echo '<li><a href="?page=search">Interview Search</a></li>';
+                    }
+                ?>
                 <li><a href="?page=contact">Contact Us</a>
                 </li>
             </ul>

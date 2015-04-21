@@ -1,4 +1,3 @@
-<?php $name = $_POST['name']; ?> 
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -34,6 +33,8 @@ margin: 40px 60px;
 </style>
 </head>
 <body>
+<?php if (strtolower($_POST['name']) == "jerry") {?>
+
 <div id="jerry">
 	    
 	    <p> <img src="img/Jerry.jpg" alt="Jerry Pic" style="width:240px;height:240px" align="left" hspace="140">
@@ -46,32 +47,28 @@ margin: 40px 60px;
 	        Linkedin: <a href="https://www.linkedin.com/profile/view?id=203416098"><img src="img/linkedin.png" alt="linkedin pic" style="width:25px;height:25px" > </a>
 	    </p>
 </div>
-<div id="faye">	    
-	    <p> <img src="img/Faye.jpg" alt="Jerry Pic" style="width:240px;height:240px" align="left" hspace="140">
-	    	
-	    	Name:     Faye Zhang <br>
-	        School:   Georgia Institute of Technology <br>
-	        Major:    Computer Science <br>
-	        Email:    faye413@gatech.edu <br>
-	        Phone:    770-999-543 <br>
-	        Linkedin: <a href="https://www.linkedin.com/profile/view?id=2203106740"><img src="img/linkedin.png" alt="linkedin pic" style="width:25px;height:25px" > </a>
-	    </p>
+
+<?} else {?>
+
+<div id="faye">     
+      <p> <img src="img/Faye.jpg" alt="Jerry Pic" style="width:240px;height:240px" align="left" hspace="140">
+        
+        Name:     Faye Zhang <br>
+          School:   Georgia Institute of Technology <br>
+          Major:    Computer Science <br>
+          Email:    faye413@gatech.edu <br>
+          Phone:    770-999-543 <br>
+          Linkedin: <a href="https://www.linkedin.com/profile/view?id=2203106740"><img src="img/linkedin.png" alt="linkedin pic" style="width:25px;height:25px" > </a>
+      </p>
 </div>
+<?php
+}
+?>
+
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jd.js" type="text/javascript"></script>  
-<script>
-$(document).ready(function(){
-       if ($name="jerry") {
-          $('#jerry').show();
-          $('#faye').hide();
-       } 
-       if ($name="faye") {
-       	  $('#faye').show();
-          $('#jerry').hide();
-       }                                          
-    });
-</script>
+
 </body> 
 <html>
 

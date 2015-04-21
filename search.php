@@ -1,1 +1,6 @@
-<?php echo $_POST['name'];?> search
+<h1>
+    Hi, <?php echo $_POST['name'];?>!
+</h1>
+<p>
+    Search.
+</p>

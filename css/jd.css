@@ -68,6 +68,16 @@ div.bg-div {
 .ib-nav-bar {
     background-color: #F8F8F8;
 }
+
+.calendar-table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+.selected-box {
+    background-color: #20AD27;
+}
+
 /*------------interviewer page end--------------*/
 
 

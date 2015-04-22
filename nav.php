@@ -19,10 +19,9 @@
                         echo '<li><a href="?page=search">Interview Search</a></li>';
                     }
                 ?>
-                <li><a href="?page=contact">Contact Us</a>
-                </li>
-                <li style="float:right;"><a href="index.html">log out</a>
+                <li><a href="?page=contact">Contact Us</a></li>
             </ul>
+            <a href="index.html"><span class="btn btn-default" style="float:right; margin: 10px auto;">log out</span></a>
         </div>
     </div>
 </div>

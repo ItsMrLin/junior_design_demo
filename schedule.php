@@ -1,9 +1,11 @@
 <h1>
     Hi, <?php echo $_POST['name'];?>!
 </h1>
-<p>
+
+<div>
     Please set your availability.
-</p>
+    <button class="btn btn-default schedule-save-btn" style="float:right; margin-bottom: 10px;" >Save</button>
+</div>
 <div class="calendar">
     <table class="table table-bordered">
         <thead>
@@ -19,8 +21,8 @@
             </tr>
         </thead> 
         <tbody>
-            <tr><td>9:00am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><td>9:30am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>9:00am</td><td></td><td></td><td></td><td></td><td class="set-time"></td><td></td><td></td></tr>
+            <tr><td>9:30am</td><td></td><td></td><td></td><td></td><td class="set-time"></td><td></td><td></td></tr>
             <tr><td>10:00am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
             <tr><td>10:30am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
             <tr><td>11:00am</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -44,16 +46,19 @@
 
 <script type="text/javascript">
     $( document ).ready(function() {
-        console.log(d3);
+        $(".schedule-save-btn").click(function(){
+            localStorage.setItem("saved-calendar", true);
+            alert("Sucessfully Saved Your Schedule");
+        });
+        if (localStorage.getItem("saved-calendar")) {
+            $(".set-time").addClass("selected-box");
+        }
+        
     });
 
     d3.selectAll("td")
         .on("click", function(){
-            // alert(d3.select(this)
-            //     .classed("selected-box"));
             d3.select(this)
                 .classed("selected-box", d3.select(this).classed("selected-box")^true);
-            // console.log();
-                // .attr("background-color", "#20AD27")
-        })
+        });
 </script>

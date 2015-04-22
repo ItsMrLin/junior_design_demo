@@ -3,6 +3,10 @@
     color: white;
 }
 
+form input{
+    color: initial;
+}
+
 /*-----------splash page----------*/
 
 .ib-logo {
@@ -122,3 +126,8 @@ div.bg-div {
 }
 /*---------------NAV END----------*/
 
+.interview-info-box {
+    border-radius: 5px;
+    border: 1px dashed white;
+    padding: 10px;
+}

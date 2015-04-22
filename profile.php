@@ -42,7 +42,7 @@ margin: 40px 60px;
 	    	Name:     Jerry Lin <br>
 	        Company:  eBay Inc. <br>
 	        Position: Software Engineer <br>
-	        Email:    jlin48@gmail.com <br>
+	        Email:    zlin48@gatech.edu <br>
 	        Phone:    770-675-8533 <br>
 	        Linkedin: <a href="https://www.linkedin.com/profile/view?id=203416098"><img src="img/linkedin.png" alt="linkedin pic" style="width:25px;height:25px" > </a>
 	    </p>
@@ -51,7 +51,7 @@ margin: 40px 60px;
 <?} else {?>
 
 <div id="faye">     
-      <p> <img src="img/Faye.jpg" alt="Jerry Pic" style="width:240px;height:240px" align="left" hspace="140">
+      <p> <img src="img/Faye.jpg" alt="Faye Pic" style="width:240px;height:240px" align="left" hspace="140">
         
         Name:     Faye Zhang <br>
           School:   Georgia Institute of Technology <br>

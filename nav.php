@@ -21,6 +21,7 @@
                 ?>
                 <li><a href="?page=contact">Contact Us</a>
                 </li>
+                <li style="float:right;"><a href="index.html">log out</a>
             </ul>
         </div>
     </div>

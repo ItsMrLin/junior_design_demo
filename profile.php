@@ -69,6 +69,20 @@ margin: 40px 60px;
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jd.js" type="text/javascript"></script>  
 
+<script>
+$(document).ready(function(){
+  console.log($name);
+       if ($name="jerry") {
+          $('#jerry').show();
+          $('#faye').hide();
+       } 
+       if ($name="faye") {
+       	  $('#faye').show();
+          $('#jerry').hide();
+       }                                          
+    });
+</script>
+
 </body> 
 <html>
 
